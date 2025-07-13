@@ -2,6 +2,10 @@
 
 QuantumOS é uma plataforma revolucionária que combina o poder da computação quântica com inteligência artificial avançada para resolver problemas complexos em tempo recorde.
 
+## Visão Geral
+
+O QuantumOS foi desenvolvido para o domínio www.aigronovatech.com.br e oferece uma interface intuitiva para acessar recursos de computação quântica e inteligência artificial.
+
 ## Estrutura do Projeto
 
 O projeto QuantumOS é uma aplicação full-stack com a seguinte estrutura:
