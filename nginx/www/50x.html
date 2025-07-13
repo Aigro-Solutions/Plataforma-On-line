@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro no Servidor | QuantumOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #0a1a2f;
+            --primary-blue: #0d3b66;
+            --fluorescent: #0ff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'EB Garamond', serif;
+            background: linear-gradient(rgba(10, 26, 47, 0.95), rgba(13, 59, 102, 0.9));
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-container {
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--fluorescent);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: var(--fluorescent);
+            color: var(--primary-dark);
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: 2px solid var(--fluorescent);
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: var(--fluorescent);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+        
+        .quantum-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 255, 255, 0.2);
+            position: relative;
+            margin: 0 auto 3rem;
+            animation: rotate 20s linear infinite;
+        }
+        
+        .quantum-particle {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: var(--fluorescent);
+            box-shadow: 0 0 10px var(--fluorescent);
+            animation: pulse 3s infinite alternate;
+        }
+        
+        .particle-1 { top: 20%; left: 20%; animation-delay: 0s; }
+        .particle-2 { top: 70%; left: 10%; animation-delay: 0.5s; }
+        .particle-3 { top: 40%; left: 70%; animation-delay: 1s; }
+        .particle-4 { top: 80%; left: 80%; animation-delay: 1.5s; }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.7; }
+            100% { transform: scale(1.2); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="quantum-circle">
+            <div class="quantum-particle particle-1"></div>
+            <div class="quantum-particle particle-2"></div>
+            <div class="quantum-particle particle-3"></div>
+            <div class="quantum-particle particle-4"></div>
+        </div>
+        
+        <h1 class="error-code">500</h1>
+        <h2 class="error-title">Erro no Servidor</h2>
+        <p class="error-message">
+            Desculpe, ocorreu um erro em nosso servidor. Nossa equipe já foi notificada e está trabalhando para resolver o problema.
+        </p>
+        
+        <a href="/" class="btn">Voltar para a Página Inicial</a>
+    </div>
+</body>
+</html>
